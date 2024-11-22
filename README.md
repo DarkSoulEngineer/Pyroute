@@ -1,45 +1,46 @@
-# PyRoute: Device Routing in Network Hierarchies
+# PyRoute: Network Device Routing
 
-**PyRoute** is a Python library designed for navigating network hierarchies and finding routes between devices based on their MAC addresses. The library allows you to search for devices, track their parent-child relationships, and determine routes between two devices by finding common parents.
-
----
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Find Device](#find-device)
-  - [Route to Parent](#route-to-parent)
-  - [Create Routing List](#create-routing-list)
-  - [Example](#example)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
-## Overview
-
-PyRoute enables you to model and query a hierarchical network structure, where devices are represented by their **MAC addresses** and **children** devices. This tool can be particularly useful for network administrators, cybersecurity professionals, or anyone who needs to analyze network structures and find paths between devices.
+**PyRoute** is a Python library to model network hierarchies and find routes between devices using their MAC addresses. It helps trace devices and their parent chains, enabling you to calculate routes through complex network structures.
 
 ---
 
 ## Features
 
-- **Device Search**: Find a device in the network hierarchy by its MAC address.
-- **Parent Chain Tracking**: Trace the chain of parent devices leading to a given device.
-- **Route Creation**: Find a route between two devices, including the common parent(s) and the number of hops.
-- **Customizable**: Easily adaptable to different network topologies.
+- **Search Devices**: Locate a device by its MAC address in the network hierarchy.
+- **Parent Chain**: Track the parent chain of a device.
+- **Route Calculation**: Find the route between two devices, including common parents.
 
 ---
 
 ## Installation
 
-To use **PyRoute**, simply clone the repository or install it via `pip` (if available):
-
-### Clone the repository:
+Clone the repository and use the code directly:
 
 ```bash
 git clone https://github.com/<your-username>/pyroute.git
 cd pyroute
+
+
+** EXAMPLE NETWORK **
+
+         +--------------------+
+         |    08:3A:8D:D1:C7:8F |
+         |  D1 Mini WEMOS      |
+         +--------------------+
+                  |
+    +--------------------------+
+    |                          |
++-----------+            +-----------+
+| 34:5F:45:A8:64:8C |    | 34:5F:45:AA:A4:4C |
+|  Device-1    |        |  Device-2    |
++-----------+            +-----------+
+    |                          |
++-----------+            +-----------+
+| 50:6B:AC:44:23:10 |    | 50:3A:8D:AA:B1:C1 |
+| Device-1-1   |        | Device-2-1   |
++-----------+            +-----------+
+                          |
+                   +----------------------+
+                   | 60:1A:CD:55:66:77    |
+                   | Device-2-1-1         |
+                   +----------------------+
