@@ -1,0 +1,61 @@
+{
+    "mac_address": "08:3A:8D:D1:C7:8F",
+    "name": "D1 Mini WEMOS",
+    "children": [
+        {
+            "mac_address": "34:5F:45:A8:64:8C",
+            "name": "Device-1",
+            "children": [
+                {
+                    "mac_address": "50:6B:AC:44:23:10",
+                    "name": "Device-1-1",
+                    "children": []
+                },
+                {
+                    "mac_address": "50:6B:AC:44:23:11",
+                    "name": "Device-1-2",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "mac_address": "34:5F:45:AA:A4:4C",
+            "name": "Device-2",
+            "children": [
+                {
+                    "mac_address": "50:3A:8D:AA:B1:C1",
+                    "name": "Device-2-1",
+                    "children": [
+                        {
+                            "mac_address": "60:1A:CD:55:66:77",
+                            "name": "Device-2-1-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "mac_address": "50:3A:8D:AA:B2:C2",
+                    "name": "Device-2-2",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "mac_address": "40:7F:89:12:34:56",
+            "name": "Device-3",
+            "children": [
+                {
+                    "mac_address": "70:8C:FA:11:22:33",
+                    "name": "Device-3-1",
+                    "children": [
+                        {
+                            "mac_address": "80:5D:BC:44:55:66",
+                            "name": "Device-3-1-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
