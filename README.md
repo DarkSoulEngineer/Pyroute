@@ -12,16 +12,8 @@
 
 ---
 
-## Installation
 
-Clone the repository and use the code directly:
-
-```bash
-git clone https://github.com/<your-username>/pyroute.git
-cd pyroute
-
-
-- EXAMPLE NETWORK
+## EXAMPLE NETWORK
 
                   +--------------------+
                   |  08:3A:8D:D1:C7:8F |
@@ -44,3 +36,12 @@ cd pyroute
                                   | 60:1A:CD:55:66:77 |
                                   | Device-2-1-1      |
                                   +-------------------+
+
+## Installation
+
+Clone the repository and use the code directly:
+
+```bash
+
+git clone https://github.com/<your-username>/pyroute.git
+cd pyroute
