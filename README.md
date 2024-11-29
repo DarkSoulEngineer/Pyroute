@@ -3,11 +3,12 @@
 **PyRoute** is a Python script that find routes between devices using their MAC addresses. It helps trace devices and their parent chains, enabling you to calculate routes through complex network structures and nasted objects.
 
 # Table of Contents
-  - [Requirements](#requirements)
-  - [Features](#features)
-  - [Example network](#example-network)
-  - [Installation](#installation)
-  - [Usage](#usage)
+
+1. **[Requirements](#requirements)**
+2. **[Features](#features)**
+3. **[Example Network](#example-network)**
+4. **[Installation](#installation)**
+5. **[Usage](#usage)**
   
 # Requirements
 - **Python 3.x**
