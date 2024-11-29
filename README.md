@@ -1,7 +1,16 @@
 # PyRoute: Network Device Routing
 
-**PyRoute** is a Python library to model network hierarchies and find routes between devices using their MAC addresses. It helps trace devices and their parent chains, enabling you to calculate routes through complex network structures.
+**PyRoute** is a Python script that find routes between devices using their MAC addresses. It helps trace devices and their parent chains, enabling you to calculate routes through complex network structures and nasted objects.
 
+# Table of Contents
+  - [Requirements](#requirements)
+  - [Features](#features)
+  - [EXAMPLE NETWORK](#example_network)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  
+# Requirements
+- **Python 3.x**
 ---
 
 ## Features
@@ -42,6 +51,12 @@
 Clone the repository and use the code directly:
 
 ```bash
-
 git clone https://github.com/DarkSoulEngineer/pyroute.git
 cd pyroute
+```
+
+## Usage
+
+```
+python main.py
+```
