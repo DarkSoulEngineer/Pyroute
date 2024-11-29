@@ -5,7 +5,7 @@
 # Table of Contents
   - [Requirements](#requirements)
   - [Features](#features)
-  - [EXAMPLE NETWORK](#example_network)
+  - [EXAMPLE NETWORK](#example-network)
   - [Installation](#installation)
   - [Usage](#usage)
   
