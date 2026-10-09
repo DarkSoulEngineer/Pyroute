@@ -1,30 +1,57 @@
-# PyRoute: Network Device Routing
+# Pyroute
+**A Python routing algorithm that finds the optimal path between two MAC addresses in a nested JSON hierarchy.**
 
-**PyRoute** is a Python script that find routes between devices using their MAC addresses. It helps trace devices and their parent chains, enabling you to calculate routes through complex network structures and nasted objects.
+[![License: GPL v3](https://img.shields.io/github/license/DarkSoulEngineer/Pyroute)](LICENSE)
+![Python](https://img.shields.io/badge/language-Python%203.x-3776AB)
 
-# Table of Contents
+## Table of Contents
 
-1. **[Requirements](#requirements)**
-2. **[Features](#features)**
-3. **[Example Network](#example-network)**
-4. **[Installation](#installation)**
-5. **[Usage](#usage)**
-  
-# Requirements
-- **Python 3.x**
----
+- [Description](#description)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
 
-## Features
+## Description
+
+Pyroute is a Python script that finds routes between network devices using their MAC addresses. It reads a network topology defined as a nested JSON hierarchy, traces devices and their parent chains, and calculates the route between two devices — including common parents — through complex network structures.
+
+### Features
 
 - **Search Devices**: Locate a device by its MAC address in the network hierarchy.
 - **Parent Chain**: Track the parent chain of a device.
 - **Route Calculation**: Find the route between two devices, including common parents.
 
----
+## Requirements
 
+- **Python 3.x**
 
-## EXAMPLE NETWORK
+No third-party packages are required; the script uses only the standard library.
 
+## Installation
+
+Clone the repository and use the code directly:
+
+```bash
+git clone https://github.com/DarkSoulEngineer/Pyroute.git
+cd Pyroute
+```
+
+## Usage
+
+Run the script with the network topology provided in `network.json`:
+
+```bash
+python main.py
+```
+
+The script reads `network.json`, computes the route between the start and end MAC addresses defined in `main.py`, and prints the routing list along with the number of hops.
+
+### Example Network
+
+The provided `network.json` describes the following topology:
+
+```
                       +--------------------+
                       |  08:3A:8D:D1:C7:8F |
                       |  D1 Mini WEMOS     |
@@ -46,18 +73,8 @@
                                       | 60:1A:CD:55:66:77 |
                                       | Device-2-1-1      |
                                       +-------------------+
-
-## Installation
-
-Clone the repository and use the code directly:
-
-```bash
-git clone https://github.com/DarkSoulEngineer/pyroute.git
-cd pyroute
 ```
 
-## Usage
+## License
 
-```
-python main.py
-```
+GPL-3.0 — see [LICENSE](LICENSE).
