@@ -14,7 +14,7 @@
 
 ## Description
 
-Pyroute is a Python script that finds routes between network devices using their MAC addresses. It reads a network topology defined as a nested JSON hierarchy, traces devices and their parent chains, and calculates the route between two devices — including common parents — through complex network structures.
+Pyroute is a Python script that finds routes between network devices using their MAC addresses. It reads a network topology defined as a nested JSON hierarchy, traces devices and their parent chains, and calculates the route between two devices (including common parents) through complex network structures.
 
 ### Features
 
@@ -77,4 +77,4 @@ The provided `network.json` describes the following topology:
 
 ## License
 
-GPL-3.0 — see [LICENSE](LICENSE).
+GPL-3.0. See [LICENSE](LICENSE).
